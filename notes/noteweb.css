@@ -45,7 +45,7 @@ audio:not([controls]) {
 a {
     background-color: transparent;
 }
-a:active, a:hover {
+a:active, a:hover, a:visited {
     outline: 0;
     color: orange;
 }
