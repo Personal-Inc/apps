@@ -47,6 +47,7 @@ a {
 }
 a:active, a:hover {
     outline: 0;
+    color: orange;
 }
 abbr[title] {
     border-bottom: 1px dotted;
@@ -236,6 +237,9 @@ section {
 }
 .grey{
   color: grey;
+}
+.orange{
+    color: orange;
 }
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
@@ -1122,7 +1126,6 @@ a {
     text-decoration: none;
 }
 a:hover, a:focus {
-    color: #23547f;
     text-decoration: underline;
 }
 a:focus {
