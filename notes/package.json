@@ -1,6 +1,6 @@
 {  
    "name":"personal-notes",
-   "version":"1.1.0",
+   "version":"1.1.3",
    "manifestUrl":"http://pawnda.github.io/apps/package.json",
    "packages":{  
       "mac":{  
