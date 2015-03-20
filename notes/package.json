@@ -1,6 +1,6 @@
 {  
    "name":"personal-notes",
-   "version":"1.1.6",
+   "version":"1.1.9",
    "manifestUrl":"http://personal-inc.github.io/apps/notes/package.json",
    "packages":{  
       "mac":{  
