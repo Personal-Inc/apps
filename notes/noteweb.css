@@ -232,7 +232,7 @@ section {
 .header-button{
   margin-top: 2px;
 }
-.header-left > div{
+.header-left > .text-right{
    border-right: 1px solid #dfdfdf;
 }
 .grey{
