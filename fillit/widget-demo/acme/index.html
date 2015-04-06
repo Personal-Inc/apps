@@ -1,11 +1,12 @@
+
 <!doctype html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="p3-form-template" content="form_template:66376e46-9b10-4644-8119-88e16dc0f6c9"/>
+  <meta name="p3-form-template" content="form_template:b7adfc46-eef3-4233-b3c6-1f0cae3dd555"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Allstate Insurance Info</title>
+  <title>Auto Insurance Info</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="../../stylesheets/bootstrap.min.css">
@@ -17,18 +18,81 @@
   <script src="../../javascripts/common.js" type="text/javascript"></script>
 </head>
 
-<body class="all-state-body">
-	<form id="allstate-insurance-33" name="Allstate Insurance Info" action="https://personal-inc.github.io/forms/partners/progressive-insurance/">
-	<div class="commonheader">
-		<div class="container">
-			<div class="col-md-3 col-sm-3 col-xs-12 smallpadding" style="margin-top: 5px;"><img src="../../images/allstate-logo.png" /></div>
-			<div class="col-md-6 col-sm-9 col-xs-12 smallpadding alignCenter subHeader allstate">Insurance Info</div>
+<body class="bankrate-auto-insurance">
+	<form id="auto-insurance-33" data-p3-landing="true" name="insuranceQuotes Auto Insurance Info" action="http://personal-inc.github.io/forms/partners/allstate/">
+	<div class="container">
+		<div class="col-md-3 smallpadding"><img src="../../../images/bankrate-logo.png" /></div>
+		<div class="col-md-6 smallpadding alignCenter"><h2>Auto Insurance Info</h2></div>
+		<div class="col-md-3 alignRight qrPostion"><img src="../../../images/bankrate-qr.png" /></div>
+	</div>
+	<div class="divider"></div>
+	<div class="container">
+		<div class="col-md-12"><h4>Vehicle 1 Description & Usage</h4><hr></div>
+		
+		
+		<div class="col-md-4">
+			<label for="0.make">Make</label><br />
+			<input type="text" data-p3-context="0" name="0.make" id="0.make" data-p3-field-template="make" class="form-control" />
+		</div>
+		<div class="col-md-5">
+			<label for="0.model">Model</label><br />
+			<input type="text" data-p3-context="0" class="form-control" name="0.model" id="0.model" data-p3-field-template="model"/>
+		</div>
+		<div class="col-md-3">
+			<label for="0.year">Year</label><br />
+			<input  type="text"  class="form-control datepicker datepicker-init-years" data-date-format="yyyy" data-p3-context="0" name="0.year"  id="0.year" data-p3-field-template="year">
 		</div>
 	</div>
-		<div class="divider"></div>
+	
+	
+	<div class="container smallBreak">
+		<div class="col-md-12">
+			<label style="margin-top: 3px;">Vehicle Use</label><br />
+			<input type="checkbox" data-p3-context="0" value="Business" name="0.car_vehicle_use" id="0.car_vehicle_use_1" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use" >
+			<label for="0.car_vehicle_use_1" style="margin-right: 15px;">Business</label>
+			<input type="checkbox" data-p3-context="0" value="Commute" name="0.car_vehicle_use" id="0.car_vehicle_use_2" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
+			<label for="0.car_vehicle_use_2" style="margin-right: 15px;">Commute</label>
+			<input type="checkbox" data-p3-context="0" value="Farm" name="0.car_vehicle_use" id="0.car_vehicle_use_3" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
+			<label for="0.car_vehicle_use_3" style="margin-right: 15px;">Farm</label>
+			<input type="checkbox" data-p3-context="0" value="Pleasure" name="0.car_vehicle_use" id="0.car_vehicle_use_4" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
+			<label for="0.car_vehicle_use_4" style="margin-right: 15px;">Pleasure</label>
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="container">
+		<div class="col-md-12"><h4>Vehicle 2 Description & Usage</h4><hr></div>
+		
+		
+		<div class="col-md-4">
+			<label for="1.make">Make</label><br />
+			<input type="text" data-p3-context="1" name="1.make" data-p3-field-template="make" id="1.make" class="form-control" />
+		</div>
+		<div class="col-md-5">
+			<label for="1.model">Model</label><br />
+			<input type="text" data-p3-context="1" class="form-control" name="1.model" id="1.model" data-p3-field-template="model"/>
+		</div>
+		<div class="col-md-3">
+			<label for="1.year">Year</label><br />
+			<input  type="text"  class="form-control datepicker datepicker-init-years" data-date-format="yyyy" data-p3-context="1"  name="1.year"  id="1.year" data-p3-field-template="year">
+		</div>
+		
+	</div>
+	<div class="container smallBreak">
+		<div class="col-md-12">
+			<label style="margin-top: 3px;">Vehicle Use</label><br />
+			<input type="checkbox"  data-p3-context="1" value="Business" name="1.car_vehicle_use" id="1.car_vehicle_use_1" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
+			<label for="1.car_vehicle_use_1" style="margin-right: 15px;">Business</label>
+			<input type="checkbox"  data-p3-context="1" value="Commute" name="1.car_vehicle_use" id="1.car_vehicle_use_2" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
+			<label for="1.car_vehicle_use_2" style="margin-right: 15px;">Commute</label>
+			<input type="checkbox"  data-p3-context="1" value="Farm" name="1.car_vehicle_use" id="1.car_vehicle_use_3" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
+			<label for="1.car_vehicle_use_3" style="margin-right: 15px;">Farm</label>
+			<input type="checkbox"  data-p3-context="1" value="Pleasure" name="1.car_vehicle_use" id="1.car_vehicle_use_4" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
+			<label for="1.car_vehicle_use_4" style="margin-right: 15px;">Pleasure</label>
+		</div>
+	</div>
+	<div class="divider"></div>
 	
 	<div class="container">
-		<div class="col-md-6">
 		<div class="col-md-12"><h4>Primary Driver Info</h4><hr></div>
 		
 		
@@ -45,6 +109,10 @@
 			<input  type="text"  class="form-control datepicker datepicker-init" data-date-format="mm/dd/yyyy" data-p3-context="0" name="0.birthday_birthday" id="0.birthday_birthday" data-p3-field-template="birthday_birthday">
 		</div>
 		
+	</div>
+	
+	
+	<div class="container smallBreak">
 		<div class="col-md-4">
 			<label for="0.personal_details_sex">Gender</label><br />
 			<select class="form-control" data-p3-context="0" name="0.personal_details_sex" id="0.personal_details_sex" data-p3-field-template="personal_details_sex">
@@ -121,11 +189,13 @@
 				<option value="Wyoming" >Wyoming</option>
 			</select>
 		</div>
+	</div>
 	
 	
+	<div class="container smallBreak">
 		<div class="col-md-4">
 			<label for="0.personal_email">Email</label><br>
-			<input type="text" class="form-control" data-p3-context="0" name="0.personal_email" id="0.personal_email" data-p3-field-template="personal_email">
+			<input type="text" class="form-control" data-p3-context="0" name="0.personal_email" id="0.personal_email" data-p3-email="true" data-p3-field-template="personal_email">
 		</div>
 		<div class="col-md-4">
 			<label for="0.education_degree_received">Degree Received</label><br />
@@ -137,7 +207,10 @@
 		</div>
 	</div>
 	
-		<div class="col-md-6">
+	
+	<div class="divider"></div>
+	
+	<div class="container">
 		<div class="col-md-12"><h4>Other Driver Info</h4><hr></div>
 		<div class="col-md-4">
 			<label for="1.preferred_first_name">First Name</label><br />
@@ -151,7 +224,10 @@
 			<label for="1.birthday_birthday">Birthday</label><br />
 			<input type="text" class="form-control datepicker datepicker-init" data-date-format="mm/dd/yyyy" data-p3-context="1" name="1.birthday_birthday" id="1.birthday_birthday" data-p3-field-template="birthday_birthday"/>
 		</div>
-
+	</div>
+	
+	
+	<div class="container smallBreak">
 		<div class="col-md-4">
 			<label for="1.personal_details_sex">Gender</label><br />
 			<select class="form-control" data-p3-context="1" name="1.personal_details_sex" id="1.personal_details_sex" data-p3-field-template="personal_details_sex">
@@ -228,7 +304,10 @@
 				<option value="Wyoming" >Wyoming</option>
 			</select>
 		</div>
-
+	</div>
+	
+	
+	<div class="container smallBreak">
 		<div class="col-md-4">
 			<label for="1.personal_email">Email</label><br>
 			<input type="text" class="form-control" data-p3-context="1" name="1.personal_email" id="1.personal_email" data-p3-field-template="personal_email">
@@ -242,70 +321,9 @@
 			<input type="text" class="form-control" data-p3-context="1" name="1.equifax_credit_score" id="1.equifax_credit_score" data-p3-field-template="equifax_credit_score"/>
 		</div>
 	</div>
-	</div>
-	<div class="divider"></div>
-	<div class="container">
-		<div class="col-md-6">
-		<div class="col-md-12"><h4>Vehicle 1 Description & Usage</h4><hr></div>
-		
-		
-		<div class="col-md-4">
-			<label for="0.make">Make</label><br />
-			<input type="text" data-p3-context="0" name="0.make" id="0.make" data-p3-field-template="make" class="form-control" />
-		</div>
-		<div class="col-md-5">
-			<label for="0.model">Model</label><br />
-			<input type="text" data-p3-context="0" class="form-control" name="0.model" id="0.model" data-p3-field-template="model"/>
-		</div>
-		<div class="col-md-3">
-			<label for="0.year">Year</label><br />
-			<input  type="text"  class="form-control datepicker datepicker-init-years" data-date-format="yyyy" data-p3-context="0" name="0.year"  id="0.year" data-p3-field-template="year">
-		</div>
-		<div class="col-md-12">
-			<label style="margin-top: 3px;">Vehicle Use</label><br />
-			<input type="checkbox" data-p3-context="0" value="Business" name="0.car_vehicle_use" id="0.car_vehicle_use_1" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use" >
-			<label for="0.car_vehicle_use_1" style="margin-right: 15px;">Business</label>
-			<input type="checkbox" data-p3-context="0" value="Commute" name="0.car_vehicle_use" id="0.car_vehicle_use_2" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
-			<label for="0.car_vehicle_use_2" style="margin-right: 15px;">Commute</label>
-			<input type="checkbox" data-p3-context="0" value="Farm" name="0.car_vehicle_use" id="0.car_vehicle_use_3" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
-			<label for="0.car_vehicle_use_3" style="margin-right: 15px;">Farm</label>
-			<input type="checkbox" data-p3-context="0" value="Pleasure" name="0.car_vehicle_use" id="0.car_vehicle_use_4" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
-			<label for="0.car_vehicle_use_4" style="margin-right: 15px;">Pleasure</label>
-		</div>
-	</div>
 
-	<div class="col-md-6">
-		<div class="col-md-12"><h4>Vehicle 2 Description & Usage</h4><hr></div>
-		
-		
-		<div class="col-md-4">
-			<label for="1.make">Make</label><br />
-			<input type="text" data-p3-context="1" name="1.make" data-p3-field-template="make" id="1.make" class="form-control" />
-		</div>
-		<div class="col-md-5">
-			<label for="1.model">Model</label><br />
-			<input type="text" data-p3-context="1" class="form-control" name="1.model" id="1.model" data-p3-field-template="model"/>
-		</div>
-		<div class="col-md-3">
-			<label for="1.year">Year</label><br />
-			<input  type="text"  class="form-control datepicker datepicker-init-years" data-date-format="yyyy" data-p3-context="1"  name="1.year"  id="1.year" data-p3-field-template="year">
-		</div>
-
-		<div class="col-md-12">
-			<label style="margin-top: 3px;">Vehicle Use</label><br />
-			<input type="checkbox"  data-p3-context="1" value="Business" name="1.car_vehicle_use" id="1.car_vehicle_use_1" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
-			<label for="1.car_vehicle_use_1" style="margin-right: 15px;">Business</label>
-			<input type="checkbox"  data-p3-context="1" value="Commute" name="1.car_vehicle_use" id="1.car_vehicle_use_2" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
-			<label for="1.car_vehicle_use_2" style="margin-right: 15px;">Commute</label>
-			<input type="checkbox"  data-p3-context="1" value="Farm" name="1.car_vehicle_use" id="1.car_vehicle_use_3" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
-			<label for="1.car_vehicle_use_3" style="margin-right: 15px;">Farm</label>
-			<input type="checkbox"  data-p3-context="1" value="Pleasure" name="1.car_vehicle_use" id="1.car_vehicle_use_4" style="margin-right: 5px;" data-p3-field-template="car_vehicle_use">
-			<label for="1.car_vehicle_use_4" style="margin-right: 15px;">Pleasure</label>
-		</div>
-	</div>
-	</div>
 	<div class="divider"></div>
-	<div class="container">
+	
 	<div class="container">
 		<div class="col-md-12"><h4>Current Insurance Info</h4><hr></div>
 		<div class="col-md-4">
@@ -331,16 +349,16 @@
 		<div class="col-md-4">
 			<label for="0.liability_protection_property_damage">Current Property Protection</label><br />
 			<input type="text" data-p3-context="0" class="form-control" name="0.liability_protection_property_damage" id="0.liability_protection_property_damage" data-p3-field-template="liability_protection_property_damage"/>
-		</div>
+		</div>	
                 <!-- temporary solution for ensuring proper correlations (i.e. implicit context resolution) -->
 		<div class="hide">
 			<label for="0.deductible_car">Current Deductible</label><br />
 			<input type="text" data-p3-context="0" class="form-control" name="0.deductible_car" id="0.deductible_car" data-p3-field-template="deductible_car"/>
 		</div>
 	</div>
-	</div>
+	
 	<div class="divider"></div>
-	<div class="container">
+	
 	<div class="container">
 		<div class="col-md-12"><h4>Desired Insurance Coverage</h4><hr></div>
 		<div class="col-md-4">
@@ -356,15 +374,12 @@
 			<input type="text" data-p3-context="1" class="form-control" name="1.deductible_car" id="1.deductible_car" data-p3-field-template="deductible_car"/>
 		</div>
 	</div>
-	</div>
-
+	
 	<div class="divider"></div>
-	<div class="container">
 	<div class="container buttonBreak">
 		<div class="col-md-12">
 			<a href="https://personal-inc.github.io/fillit/widget-demo/progressive-insurance/" class="btn p3Submit btn-primary">Submit</a>
 		</div>
-	</div>
 	</div>
 	<div class="divider"></div>
 	<div class="bigfooter container">
