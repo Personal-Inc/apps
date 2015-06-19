@@ -157,14 +157,13 @@
 <script type="text/javascript" src="headhesive.js"></script>
 
 <script>
-// Set options
 $('.note-reg-url').on('click', function() {
    //we are not using window.location.origin since ie do not support it
-   document.cookie = "context_app=" + "/apps/notes/" +"; path=/";
-   window.open('https://www.personal.com/login/signup_create', '_blank');
+   document.cookie = "context_app=" + window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '') + "/apps/notes" +"; path=/";
+   window.open('/login/signup_create', '_blank');
    return false;
 });
-
+// Set options
 var options = {
     offset: '#showHere',
     classes: {
