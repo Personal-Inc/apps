@@ -160,7 +160,7 @@
 // Set options
 $('.note-reg-url').on('click', function() {
    //we are not using window.location.origin since ie do not support it
-   document.cookie = "context_app=https://www.personal.com/apps/notes" +"; path=/";
+   document.cookie = "context_app=" + "/apps/notes/" +"; path=/";
    window.open('https://www.personal.com/login/signup_create', '_blank');
    return false;
 });
